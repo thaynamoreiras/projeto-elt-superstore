@@ -42,17 +42,11 @@ O dataset principal possui 51.290 registros.
 
 ### 3. Modelagem dimensional
 
-Foi estruturado um Star Schema com:
+O projeto utiliza o modelo dimensional Star Schema, com a tabela fato
+`fato_vendas` relacionada às dimensões de cliente, produto, localização,
+data e envio.
 
-- `dim_cliente`
-- `dim_produto`
-- `dim_localizacao`
-- `dim_data`
-- `dim_envio`
-- `fato_vendas`
-
-A tabela fato concentra chaves e métricas, enquanto os atributos descritivos ficam
-nas dimensões.
+![Modelo Star Schema](docs/modelo_star_schema.png)
 
 ### 4. Validação
 
